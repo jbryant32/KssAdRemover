@@ -1,0 +1,15 @@
+﻿{
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "name": "KissAds",
+  "description": "Handles Ad Closure For KissAnime",
+  "icons": { "16": "icon16.png" },
+  "content_scripts": [
+    {
+      "matches": [ "https://kiss-anime.co/*" ],
+      "js": [ "content_script.js" ],
+      "run_at": "document_end"
+    }
+  ]
+ 
+}
